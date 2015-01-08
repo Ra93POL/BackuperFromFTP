@@ -29,7 +29,7 @@ class adminFTP():
 
     index = 0
     while index < len(list_dirs):
-      list_dirs[index] = list_dirs[index].split()
+      list_dirs[index] = list_dirs[index].split(None, 8)
       list_dirs[index] = list_dirs[index][-1], list_dirs[index][0][0]
       if list_dirs[index][0] in [".", ".."]:
         del list_dirs[index]
@@ -57,4 +57,4 @@ class adminFTP():
 
 aftp = adminFTP(server, login, password)
 aftp.download_from()
-
+print "End :))"
