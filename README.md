@@ -1,7 +1,7 @@
 # BackuperFromFTP
 The code copy all data from ftp to local directory.
 
- main class
+ main class:
 #aftp = adminFTP(server, login, password)
  make the backup of FTP. The tree of files and dirs will  save to local computer.
 #aftp.make_backup()
